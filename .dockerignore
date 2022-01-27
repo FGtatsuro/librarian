@@ -1,8 +1,14 @@
 README.md
 LICENSE
 
+Makefile
+
 .git
 .gitignore
+
+.docker_build
+
+bin
 
 todo*
 tmp*
