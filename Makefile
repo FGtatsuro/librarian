@@ -1,4 +1,4 @@
-.PHONY: fmt lint build clean
+.PHONY: fmt lint test build clean
 .PHONY: docker/build docker/clean
 
 bin/librarian-cli: cmd/librarian-cli/main.go
@@ -11,6 +11,9 @@ fmt:
 	go fmt ./...
 lint:
 	go vet ./...
+
+test:
+	go test ./...
 
 build: bin/librarian-cli bin/librarian-server
 
