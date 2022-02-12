@@ -5,4 +5,4 @@ on:
     branches: [main]
 jobs:
   build:
-    use: ./.github/workflows/golang.yml
+    uses: ./.github/workflows/golang.yml
